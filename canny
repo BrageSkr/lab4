@@ -35,7 +35,7 @@ class CannyEdge(Node):
         self.upper_treshold = self.get_parameter('upper_treshold').value
 
         self.declare_parameter('lower_treshold', 100)
-        self.upper_treshold = self.get_parameter('lower_treshold').value
+        self.lower_treshold = self.get_parameter('lower_treshold').value
 
 
     def image_callback(self, msg):
